@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Malla Enfermería UdeC 2023</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f0f4f8;
+    }
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+    }
+    .mermaid {
+      text-align: center;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow-x: scroll;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva Enfermería UdeC - 2023</h1>
+  <div class="mermaid">
+    graph TD
+
+    %% PRIMER AÑO
+    A1[1° Sem: Anatomía Descriptiva] --> A2[2° Sem: Histología Humana]
+    A1 --> A3[2° Sem: Bioquímica]
+    A1 --> A4[2° Sem: Psicología General]
+    A1 --> A5[2° Sem: Fundamentos de Enfermería]
+    A1 --> A6[2° Sem: Inglés Comunicativo I]
+
+    %% SEGUNDO AÑO
+    A3 --> B1[3° Sem: Fisiología Enfermería]
+    B1 --> B2[4° Sem: Fisiopatología]
+    B2 --> B3[5° Sem: Farmacología]
+    A5 --> B4[3° Sem: Promoción de la Salud]
+    B4 --> B5[4° Sem: Enfermería en Salud Familiar I]
+
+    %% TERCER AÑO
+    B5 --> C1[5° Sem: Gestión del Cuidado en el Adulto I]
+    C1 --> C2[6° Sem: Gestión del Cuidado en el Adulto II]
+    C2 --> C3[7° Sem: Enfermería Adulto Mayor]
+    B3 --> C4[6° Sem: Microbiología]
+    C4 --> C5[7° Sem: Enfermería Obstetricia]
+    B1 --> C6[5° Sem: Socioantropología I]
+    C6 --> C7[6° Sem: Socioantropología II]
+
+    %% CUARTO AÑO
+    C2 --> D1[7° Sem: Gestión del Cuidado Salud Mental]
+    C2 --> D2[7° Sem: Gestión del Cuidado en Urgencias]
+    C3 --> D3[8° Sem: Niño y Adolescente I]
+    D3 --> D4[8° Sem: Niño y Adolescente II]
+    D4 --> D5[8° Sem: Bioética y Enfermería]
+    D5 --> D6[8° Sem: Inglés Comunicativo II]
+
+    %% QUINTO AÑO
+    D4 --> E1[9° Sem: Gestión del Cuidado Salud Familiar II]
+    E1 --> E2[10° Sem: Internado Intramural]
+    E1 --> E3[10° Sem: Internado Extramural]
+
+    %% CURSOS TRANSVERSALES
+    A1 --> T1[Interacción Humana]
+    T1 --> T2[Fundamentos de Ética]
+    T2 --> T3[Comunicación y Liderazgo]
+    T3 --> T4[Metodología Investigación Cualitativa]
+    T4 --> T5[Metodología Investigación Cuantitativa]
+    T5 --> T6[Enfermería Basada en Evidencia]
+    T6 --> T7[Calidad y Seguridad en Salud]
+    T7 --> T8[Gestión de Proyectos]
+    T8 --> T9[Gerencia en Salud y Enfermería]
+  </div>
+</body>
+</html>
